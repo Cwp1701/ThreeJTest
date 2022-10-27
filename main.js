@@ -1,7 +1,6 @@
 import './style.css'
 
 import * as three from 'three';
-import { PointLightHelper } from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -86,9 +85,9 @@ greenSphere.position.z = -15;
 greenSphere.position.setX(-30);
 
 function moveCamera() {
-  greenSphere.rotation.x += 0.05;
-  greenSphere.rotation.y += 0.075;
-  greenSphere.rotation.z += 0.05;
+  greenSphere.rotation.x += 0.05/2;
+  greenSphere.rotation.y += 0.075/2;
+  greenSphere.rotation.z += 0.05/2;
 
   spaceCat.rotation.y += 0.01;
   spaceCat.rotation.z += 0.01;
